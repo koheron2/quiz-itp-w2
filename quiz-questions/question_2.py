@@ -28,8 +28,14 @@ def number_of_customers_per_state(customers):
         'NY': 1
     }
     """
-    # Write your code here
-    pass
+    state_customer_count = {}
+    for key in customers:
+        if customers[key] != None:
+            state_customer_count[key] = len(customers[key])
+        else:
+            state_customer_count[key] = 0
+    return state_customer_count
+    
 
 
 class NumberOfCustomersPerStateTestCase(unittest.TestCase):

@@ -19,5 +19,5 @@ def question_1():
 
     What will be the final value of the variable c?
     """
-    # Return the CORRECT value of `c`
-    pass
+    return 30
+    
